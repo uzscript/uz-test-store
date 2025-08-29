@@ -1,9 +1,4 @@
 {
-  "functions": {
-    "standalone/server.js": {
-      "runtime": "@vercel/node@3.0.13"
-    }
-  },
   "routes": [
     {
       "handle": "filesystem"
