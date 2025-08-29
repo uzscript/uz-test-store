@@ -1,18 +1,18 @@
 {
   "builds": [
     {
-      "src": ".next/standalone/server.js",
+      "src": "standalone/server.js",
       "use": "@vercel/node"
     }
   ],
   "routes": [
     {
       "src": "/_next/static/(.*)",
-      "dest": "/.next/static/$1"
+      "dest": "/static/$1"
     },
     {
       "src": "/(.*)",
-      "dest": "/.next/standalone/server.js"
+      "dest": "/standalone/server.js"
     }
   ]
 }
