@@ -1,9 +1,10 @@
 {
-  "functions": {
-    ".next/standalone/server.js": {
-      "runtime": "nodejs18.x"
+  "builds": [
+    {
+      "src": ".next/standalone/server.js",
+      "use": "@vercel/node"
     }
-  },
+  ],
   "routes": [
     {
       "src": "/(.+)",
