@@ -1,15 +1,11 @@
 {
-  "buildCommand": "echo 'Using pre-built standalone'",
-  "outputDirectory": ".next",
-  "functions": {
-    "server.js": {
-      "runtime": "@vercel/node@3.0.13"
-    }
-  },
-  "routes": [
+  "builds": [
     {
-      "handle": "filesystem"
-    },
+      "src": "server.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
     {
       "src": "/(.*)",
       "dest": "/server.js"
