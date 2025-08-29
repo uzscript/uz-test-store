@@ -1,11 +1,18 @@
 {
+  "buildCommand": "echo 'Using pre-built standalone'",
+  "outputDirectory": ".next",
+  "functions": {
+    "server.js": {
+      "runtime": "nodejs18.x"
+    }
+  },
   "routes": [
     {
       "handle": "filesystem"
     },
     {
       "src": "/(.*)",
-      "dest": "/standalone/server.js"
+      "dest": "/server.js"
     }
   ]
 }
