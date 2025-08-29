@@ -1,0 +1,12 @@
+{
+  "/api/config/route": "app/api/config/route.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/robots.txt/route": "app/robots.txt/route.js",
+  "/sitemap.xml/route": "app/sitemap.xml/route.js",
+  "/api/tebex/packages/route": "app/api/tebex/packages/route.js",
+  "/products/[id]/page": "app/products/[id]/page.js",
+  "/products/page": "app/products/page.js",
+  "/support/page": "app/support/page.js",
+  "/page": "app/page.js",
+  "/subscribe/page": "app/subscribe/page.js"
+}
