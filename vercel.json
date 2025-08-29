@@ -7,8 +7,12 @@
   ],
   "routes": [
     {
-      "src": "/(.+)",
-      "dest": ".next/standalone/server.js"
+      "src": "/_next/static/(.*)",
+      "dest": "/.next/static/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/.next/standalone/server.js"
     }
   ]
 }
