@@ -1,14 +1,12 @@
 {
-  "builds": [
-    {
-      "src": "standalone/server.js",
-      "use": "@vercel/node"
+  "functions": {
+    "standalone/server.js": {
+      "runtime": "nodejs18.x"
     }
-  ],
+  },
   "routes": [
     {
-      "src": "/_next/static/(.*)",
-      "dest": "/static/$1"
+      "handle": "filesystem"
     },
     {
       "src": "/(.*)",
